@@ -1,0 +1,20 @@
+--- frozen-bubble.orig	2024-07-15 20:51:18.306777857 +0000
++++ frozen-bubble.new	2024-07-15 20:50:59.414774902 +0000
+@@ -5622,7 +5622,7 @@ sub menu {
+                 },
+                 'editor' => {
+                         pos => 5,
+-                        type => 'run',
++                        type => 'disabled.run',
+                         run => sub { $launch_editor->(); }
+                 },
+                 'graphics' => {
+@@ -5641,7 +5641,7 @@ sub menu {
+                 },
+                 'keys' => {
+                         pos  => 7,
+-                        type => 'run',
++                        type => 'disabled.run',
+                         run  => sub { $change_keys->() }
+                 },
+                 'highscores' => {

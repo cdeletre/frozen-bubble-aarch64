@@ -1,0 +1,29 @@
+--- Stuff.pm.old	2024-07-15 17:00:52
++++ Stuff.pm.new	2024-07-15 16:03:46
+@@ -33,7 +33,7 @@ use vars qw(@ISA @EXPORT $FPATH $FLPATH $FBHOME $FBLEV
+             compressor_xpos => 318,
+           );
+ 
+-%POS_2P = ( p2 => { left_limit => 30, right_limit => 286, top_limit => 40, 'initial_bubble_y' => 390,
++%POS_2P = ( p1 => { left_limit => 30, right_limit => 286, top_limit => 40, 'initial_bubble_y' => 390,
+                     canon => { x => 108, 'y' => 356 },
+                     simpleshooter => { x => 157, 'y' => 405, diameter => 60 },
+                     pinguin => { x => -35, 'y' => 420 },
+@@ -46,7 +46,7 @@ use vars qw(@ISA @EXPORT $FPATH $FLPATH $FBHOME $FBLEV
+                     left => { x => 30, 'y' => 40 },
+                     progress => { x => 287, 'y' => 28 },
+                   },
+-            p1 => { left_limit => 354, right_limit => 610, top_limit => 40, 'initial_bubble_y' => 390,
++            p2 => { left_limit => 354, right_limit => 610, top_limit => 40, 'initial_bubble_y' => 390,
+                     canon => { x => 432, 'y' => 356 },
+                     simpleshooter => { x => 481, 'y' => 405, diameter => 60 },
+                     pinguin => { x => 210,  'y' => 420 },
+@@ -134,7 +134,7 @@ $FBHOME   = "$ENV{HOME}/.frozen-bubble";
+             centerpanel => { x => 149, 'y' => 190 },
+           );
+ 
+-$FBHOME   = "$ENV{HOME}/.frozen-bubble";
++$FBHOME   = "./conf";
+ $FBLEVELS = "$FBHOME/levels";
+ migrate_resource_files();
+ 

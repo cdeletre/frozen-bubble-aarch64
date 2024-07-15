@@ -1,0 +1,11 @@
+--- Config.pm.old	2024-07-15 17:00:42
++++ Config.pm.new	2024-07-15 16:04:01
+@@ -5,6 +5,6 @@ $FPATH = '/usr/share/games/frozen-bubble' ;
+ use vars qw(@ISA @EXPORT $FPATH $FLPATH);
+ @ISA = qw(Exporter);
+ @EXPORT = qw($FPATH $FLPATH);
+-$FPATH = '/usr/share/games/frozen-bubble' ;
+-$FLPATH ='/usr/lib/games/frozen-bubble/fb-server';
++$FPATH = './' ;
++$FLPATH ='./fb-server';
+ 1;
